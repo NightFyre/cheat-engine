@@ -1,7 +1,7 @@
 object frmAAEditPrefs: TfrmAAEditPrefs
-  Left = 488
+  Left = 2041
   Height = 263
-  Top = 412
+  Top = 367
   Width = 169
   Anchors = [akTop]
   AutoSize = True
@@ -13,7 +13,7 @@ object frmAAEditPrefs: TfrmAAEditPrefs
   OnDestroy = FormDestroy
   OnShow = FormShow
   Position = poScreenCenter
-  LCLVersion = '2.0.6.0'
+  LCLVersion = '2.0.10.0'
   object Panel2: TPanel
     AnchorSideLeft.Control = Owner
     AnchorSideLeft.Side = asrCenter

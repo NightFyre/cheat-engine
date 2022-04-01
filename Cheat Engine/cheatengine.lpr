@@ -112,7 +112,7 @@ uses
   frmBranchMapperUnit, frmSymbolEventTakingLongUnit, LuaCheckListBox,
   textrender, diagramtypes, diagramblock, diagram, LuaDiagram, LuaDiagramBlock,
   LuaDiagramLink, diagramlink, BreakpointTypeDef, frmFoundlistPreferencesUnit,
-  LuaHeaderSections, frmDebuggerAttachTimeoutUnit, cheatecoins,
+  LuaHeaderSections, frmDebuggerAttachTimeoutUnit,
   frmMicrotransactionsUnit, frmSyntaxHighlighterEditor, LuaCustomImageList,
   dotnethost, rttihelper, cefreetype, LuaDotNetPipe, LuaRemoteExecutor,
   autoassemblercode, CSharpCompiler, newhintwindow, memrecDataStructures,

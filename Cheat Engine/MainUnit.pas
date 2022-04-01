@@ -1101,7 +1101,7 @@ uses cefuncproc, MainUnit2, ProcessWindowUnit, MemoryBrowserFormUnit, TypePopup,
   PointerscanresultReader, Parsers, Globals {$ifdef windows},GnuAssembler, xinput{$endif} ,DPIHelper,
   multilineinputqueryunit {$ifdef windows},winsapi{$endif} ,LuaClass, Filehandler{$ifdef windows}, feces{$endif}
   {$ifdef windows},frmDBVMWatchConfigUnit, frmDotNetObjectListUnit{$endif} ,ceregistry ,UnexpectedExceptionsHelper
-  ,frmFoundlistPreferencesUnit, fontSaveLoadRegistry{$ifdef windows}, cheatecoins{$endif},strutils;
+  ,frmFoundlistPreferencesUnit, fontSaveLoadRegistry,strutils;
 
 resourcestring
   rsInvalidStartAddress = 'Invalid start address: %s';
@@ -2888,10 +2888,6 @@ var
   DoNotOpenAssociatedTable: boolean;
   //set to true if the table had AA scripts enabled or the code list had nopped instruction
 begin
-  {$ifdef windows}
-  if aprilfools then decreaseCheatECoinCount;
-  {$endif}
-
   DoNotOpenAssociatedTable:=false;
 
   outputdebugstring('openProcessEpilogue called');
@@ -8083,8 +8079,6 @@ begin
   panel7.DoubleBuffered := True;
   flashprocessbutton := tflash.Create(False);
 
-
-
   dontrunshow := True;
   decodedate(now, year, month, day);
   if (month = 7) and (day = 1) then
@@ -8099,25 +8093,6 @@ begin
   end;
   if (month = 1) and (day = 1) and (year >= 2030) then
     ShowMessage(strFuture);
-
-  if (month = 4) and (day = 1) then
-    aprilfools := True;
-
-
-  //aprilfools:=true;
-  {$ifdef windows}
-  if aprilfools then  //what whould happen if this var is false?
-  begin
-    if copy(cenorm,1,5)='Cheat' then
-    begin
-      cenorm[3]:='E';
-      cenorm[4]:='A';
-      caption:=cenorm;
-    end;
-    EnableCheatECoinSystem;
-  end;
-  {$endif}
-
 
   //Load the table if one was suplied
   overridedebug := False;
@@ -9910,12 +9885,6 @@ var
   percentage: boolean;
   fastscanmethod: TFastscanmethod;
 begin
-  {$ifdef windows}
-  if aprilfools then decreaseCheatECoinCount;
-
-  QueryPerformanceCounter(scantimestart);
-  {$endif}
-
 
   cleanupPreviousResults;
 
@@ -10199,9 +10168,6 @@ var
   totaldiskspacefree: LARGE_INTEGER;{$endif}
   percentage: boolean;
 begin
-  {$ifdef windows}
-  if aprilfools then decreaseCheatECoinCount;
-  {$endif}
 
   { estimateddiskspaceneeded:=foundcount*8*3;
   GetDiskFreeSpaceEx(pchar(memscan.ScanresultFolder), diskspacefree, totaldiskspace,@totaldiskspacefree);

@@ -46,7 +46,7 @@ var
 
 implementation
 
-uses MainUnit, cheatecoins{$IFDEF windows} , windows {$ENDIF}, mainunit2;
+uses MainUnit,{$IFDEF windows} windows {$ENDIF}, mainunit2;
 
 { TfrmMicroTransactions }
 
@@ -124,49 +124,6 @@ var
   red: single;
   green: single;
 begin
-  {$IFDEF windows}
-  c:=checkCoinStatus;
-
-  if c<0 then
-  begin
-    timer1.enabled:=false;
-    tshaker.enabled:=false;
-    hide;
-    exit;
-  end;
-
-  label2.caption:=inttostr(c);
-
-  fs:=30;
-  if c<=10 then fs:=35;
-  if c<=5 then fs:=40+(5-c)*5;
-
-
-  fc:=$008000;
-  green:=c/20;
-  red:=1-c/20;
-
-  fc:=(trunc(red*255) shl 0)+(trunc(green*200) shl 8);
-  label2.Font.color:=fc;
-  if label2.font.size<>fs then
-  begin
-    label2.font.size:=fs;
-
-
-    DoAutoSize;
-
-    BitBtn1.Repaint;
-    BitBtn2.Repaint;
-    BitBtn3.Repaint;
-
-  end;
-
-  if image1.Width<>image1.height then
-    image1.Width:=image1.height;
-
-  tshaker.enabled:=c<=3;
-  shakedistance:=3-c;
-  {$ENDIF}
 end;
 
 procedure TfrmMicroTransactions.tShakerTimer(Sender: TObject);

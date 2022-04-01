@@ -1,0 +1,14 @@
+{"version":1,"strings":[
+{"hash":206096739,"name":"tfrmaaeditprefs.caption","sourcebytes":[69,100,105,116,111,114,32,112,114,101,102,101,114,101,110,99,101,115],"value":"Editor preferences"},
+{"hash":1339,"name":"tfrmaaeditprefs.button1.caption","sourcebytes":[79,75],"value":"OK"},
+{"hash":77089212,"name":"tfrmaaeditprefs.button2.caption","sourcebytes":[67,97,110,99,101,108],"value":"Cancel"},
+{"hash":448084,"name":"tfrmaaeditprefs.btnfont.caption","sourcebytes":[102,111,110,116],"value":"font"},
+{"hash":47464083,"name":"tfrmaaeditprefs.cbshowlinenumbers.caption","sourcebytes":[83,104,111,119,32,108,105,110,101,32,110,117,109,98,101,114,115],"value":"Show line numbers"},
+{"hash":225194180,"name":"tfrmaaeditprefs.cbshowgutter.caption","sourcebytes":[83,104,111,119,32,98,97,114,32,111,110,32,108,101,102,116],"value":"Show bar on left"},
+{"hash":144056386,"name":"tfrmaaeditprefs.cbsmarttab.caption","sourcebytes":[83,109,97,114,116,32,116,97,98],"value":"Smart tab"},
+{"hash":184762261,"name":"tfrmaaeditprefs.cbtabstospace.caption","sourcebytes":[84,97,98,115,32,116,111,32,115,112,97,99,101],"value":"Tabs to space"},
+{"hash":73245144,"name":"tfrmaaeditprefs.label1.caption","sourcebytes":[84,97,98,32,87,105,100,116,104],"value":"Tab Width"},
+{"hash":52,"name":"tfrmaaeditprefs.edttabwidth.text","sourcebytes":[52],"value":"4"},
+{"hash":198108820,"name":"tfrmaaeditprefs.cbfontquality.hint","sourcebytes":[84,104,101,32,102,111,110,116,32,113,117,97,108,105,116,121,32,99,97,110,32,105,109,112,97,99,116,32,115,112,101,101,100],"value":"The font quality can impact speed"},
+{"hash":207783625,"name":"tfrmaaeditprefs.label2.caption","sourcebytes":[70,111,110,116,32,113,117,97,108,105,116,121],"value":"Font quality"}
+]}

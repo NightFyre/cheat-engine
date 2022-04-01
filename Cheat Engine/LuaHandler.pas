@@ -14102,7 +14102,7 @@ begin
       formname:='';
 
 
-    r:=ShowSelectionList(application,title, caption,list, output, custominput,nil,formname);
+    //r:=ShowSelectionList(application,title, caption,list, output, custominput,nil,formname);
 
     lua_pushinteger(L,r);
     lua_pushstring(L, output);

@@ -15,7 +15,6 @@
         <TextName Value="Cheat Engine"/>
         <TextDesc Value="Scripting language and tools"/>
       </XPManifest>
-      <Icon Value="0"/>
     </General>
     <i18n>
       <EnableI18N Value="True"/>
